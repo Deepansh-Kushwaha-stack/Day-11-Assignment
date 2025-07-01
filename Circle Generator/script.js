@@ -2,7 +2,7 @@ const circles = [];
 const redoStack = [];
 
 document.body.addEventListener("click", function(e) {
-    if (e.target.tagName === 'BUTTON') return; // Don't create circles on button click
+    if (e.target.tagName === 'BUTTON') return;
 
       const circle = document.createElement("div");
       circle.className = "circle";
@@ -12,7 +12,7 @@ document.body.addEventListener("click", function(e) {
 
       document.body.appendChild(circle);
       circles.push(circle);
-      redoStack.length = 0; // Clear redo stack
+      redoStack.length = 0;
 });
 
 function getRandomColor() {
